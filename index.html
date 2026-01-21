@@ -1,42 +1,43 @@
 <!DOCTYPE html>
-<html lang="ta">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Personal Diary</title>
+    <title>MY DARK DIARY</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>🌸 My Life Diary 🌸</h1>
-    <p>Memories | Feelings | Moments</p>
+    <h1>MY DARK DIARY</h1>
+    <p>Real Life | Real Pain | Real Power</p>
 </header>
 
-<!-- Background Music -->
-<audio autoplay loop controls>
-    <source src="life.mp3" type="audio/mp3">
+<audio autoplay loop>
+    <source src="music/bgm.mp3" type="audio/mp3">
 </audio>
 
-<!-- Gallery Section -->
 <section class="gallery">
-    <img src="shi.jpeg" onclick="showStory('This is my happiest day in life ❤️')">
-    <img src="shi.jpeg" onclick="showStory('A sad but memorable moment 😢')">
-    <img src="shi.jpeg" onclick="showStory('Unforgettable journey with friends ✨')">
-</section>
+    <div class="card" onclick="openStory('That night changed my entire life forever.')">
+        <img src="images/img1.jpg">
+        <span>Night Ride</span>
+    </div>
 
-<!-- Video Section -->
-<section class="video">
-    <h2>🎬 My Favourite Video</h2>
-    <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/VIDEO_ID"
-        allowfullscreen></iframe>
+    <div class="card" onclick="openStory('Silent struggles make strong men.')">
+        <img src="images/img2.jpg">
+        <span>Lonely Phase</span>
+    </div>
+
+    <div class="card" onclick="openStory('From nothing to something.')">
+        <img src="images/img3.jpg">
+        <span>Rise</span>
+    </div>
 </section>
 
 <!-- Popup -->
 <div id="popup">
-    <div class="popup-content">
-        <span onclick="closeStory()" class="close">&times;</span>
-        <p id="storyText"></p>
+    <div class="popup-box">
+        <span class="close" onclick="closeStory()">✖</span>
+        <p id="story"></p>
     </div>
 </div>
 

@@ -1,5 +1,5 @@
-function showStory(text) {
-    document.getElementById("storyText").innerText = text;
+function openStory(text) {
+    document.getElementById("story").innerText = text;
     document.getElementById("popup").style.display = "block";
 }
 
