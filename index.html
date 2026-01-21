@@ -1,131 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>DARK DIARY</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>DARK DIARY</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- MUSIC PLAYER -->
-<div class="music-box">
-    <button onclick="toggleMusic()">▶ / ⏸ MUSIC</button>
-</div>
-
-<audio id="bgMusic" loop>
-    <source src="life.mp3" type="audio/mp3">
-    <source src="life1.mp3" type="audio/mp3">
-</audio>
-
 <header>
-    <h1>DARK DIARY</h1>
-    <p>PAIN • POWER • PROGRESS</p>
+<h1>DARK DIARY</h1>
+<p>PAIN • POWER • PROGRESS</p>
 </header>
 
-<section class="gallery">
-    <div class="card" onclick="openStory('That night made me stronger.')">
-        <img src="1.jpeg">
-        <span>NIGHT</span>
+<!-- HOME GALLERY -->
+<section id="gallery" class="gallery"></section>
+
+<!-- SINGLE VIEW -->
+<section id="singleView" class="single-view">
+    <button class="back-btn" onclick="goBack()">⬅ BACK</button>
+
+    <img id="singleImg">
+    <p id="singleStory"></p>
+
+    <div class="music-box">
+        <button onclick="toggleMusic()">▶ / ⏸ MUSIC</button>
     </div>
 
-    <div class="card" onclick="openStory('Silence builds monsters.')">
-        <img src="2.jpeg">
-        <span>STRUGGLE</span>
-    </div>
-
-    <div class="card" onclick="openStory('Rise from blood & fire.')">
-        <img src="3.jpeg">
-        <span>RISE</span>
-    </div>
+    <audio id="bgMusic"></audio>
 </section>
-<section class="gallery">
-    <div class="card" onclick="openStory('That night made me stronger.')">
-        <img src="4.jpeg">
-        <span>NIGHT</span>
-    </div>
-
-    <div class="card" onclick="openStory('Silence builds monsters.')">
-        <img src="5.jpeg">
-        <span>STRUGGLE</span>
-    </div>
-
-    <div class="card" onclick="openStory('Rise from blood & fire.')">
-        <img src="6.jpeg">
-        <span>RISE</span>
-    </div>
-</section>
-<section class="gallery">
-    <div class="card" onclick="openStory('That night made me stronger.')">
-        <img src="7.jpeg">
-        <span>NIGHT</span>
-    </div>
-
-    <div class="card" onclick="openStory('Silence builds monsters.')">
-        <img src="8.jpeg">
-        <span>STRUGGLE</span>
-    </div>
-
-    <div class="card" onclick="openStory('Rise from blood & fire.')">
-        <img src="9.jpeg">
-        <span>RISE</span>
-    </div>
-</section>
-<section class="gallery">
-    <div class="card" onclick="openStory('That night made me stronger.')">
-        <img src="10.jpeg">
-        <span>NIGHT</span>
-    </div>
-
-    <div class="card" onclick="openStory('Silence builds monsters.')">
-        <img src="11.jpeg">
-        <span>STRUGGLE</span>
-    </div>
-
-    <div class="card" onclick="openStory('Rise from blood & fire.')">
-        <img src="12.jpeg">
-        <span>RISE</span>
-    </div>
-</section>
-<section class="gallery">
-    <div class="card" onclick="openStory('That night made me stronger.')">
-        <img src="13.jpeg">
-        <span>NIGHT</span>
-    </div>
-
-    <div class="card" onclick="openStory('Silence builds monsters.')">
-        <img src="14.jpeg">
-        <span>STRUGGLE</span>
-    </div>
-
-    <div class="card" onclick="openStory('Rise from blood & fire.')">
-        <img src="15.jpeg">
-        <span>RISE</span>
-    </div>
-</section>
-<section class="gallery">
-    <div class="card" onclick="openStory('That night made me stronger.')">
-        <img src="16.jpeg">
-        <span>NIGHT</span>
-    </div>
-
-    <div class="card" onclick="openStory('Silence builds monsters.')">
-        <img src="17.jpeg">
-        <span>STRUGGLE</span>
-    </div>
-
-    <div class="card" onclick="openStory('Rise from blood & fire.')">
-        <img src="18.jpeg">
-        <span>RISE</span>
-    </div>
-</section>
-
-<!-- POPUP -->
-<div id="popup">
-    <div class="popup-box">
-        <span class="close" onclick="closeStory()">✖</span>
-        <p id="story"></p>
-    </div>
-</div>
 
 <script src="script.js"></script>
 </body>
