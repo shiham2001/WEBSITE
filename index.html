@@ -2,15 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+    <title>My Personal Diary</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Shiham</h1>
-    <h1>Mohammed Shiham</h1>
-    <h1>Mohammed Shiham</h1>
-     <h1>Mohammed Shiham3</h1>
-    <img width="200px" src="shi.jpeg" alt="reload">
-    <p>My Name Is Shiham</p>
+
+<header>
+    <h1>📔 My Life Diary</h1>
+    <p>Moments | Memories | Feelings</p>
+</header>
+
+<section class="gallery">
+    <div class="card" onclick="openStory('story1')">
+        <img src="shi.jpeg" alt="Memory 1">
+        <h3>Beautiful Day</h3>
+    </div>
+
+    <div class="card" onclick="openStory('story2')">
+        <img src="shi.jpeg" alt="Memory 2">
+        <h3>Special Moment</h3>
+    </div>
+</section>
+
+<section class="media">
+    <h2>🎵 My Favourite Song</h2>
+    <audio controls>
+        <source src="music/song.mp3" type="audio/mp3">
+    </audio>
+
+    <h2>🎬 Memory Video</h2>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+</section>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeStory()">&times;</span>
+        <p id="storyText"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
