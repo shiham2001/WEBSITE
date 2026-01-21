@@ -2,38 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MY DARK DIARY</title>
+    <title>DARK DIARY</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>MY DARK DIARY</h1>
-    <p>Real Life | Real Pain | Real Power</p>
-</header>
+<!-- MUSIC PLAYER -->
+<div class="music-box">
+    <button onclick="toggleMusic()">▶ / ⏸ MUSIC</button>
+</div>
 
-<audio autoplay loop>
-    <source src="life.mp3" type="audio/mp3">
+<audio id="bgMusic" loop>
+    <source src="music/bgm.mp3" type="audio/mp3">
 </audio>
 
+<header>
+    <h1>DARK DIARY</h1>
+    <p>PAIN • POWER • PROGRESS</p>
+</header>
+
 <section class="gallery">
-    <div class="card" onclick="openStory('That night changed my entire life forever.')">
-        <img src="shi.jpeg">
-        <span>Night Ride</span>
+    <div class="card" onclick="openStory('That night made me stronger.')">
+        <img src="images/img1.jpg">
+        <span>NIGHT</span>
     </div>
 
-    <div class="card" onclick="openStory('Silent struggles make strong men.')">
-        <img src="shi.jpeg">
-        <span>Lonely Phase</span>
+    <div class="card" onclick="openStory('Silence builds monsters.')">
+        <img src="images/img2.jpg">
+        <span>STRUGGLE</span>
     </div>
 
-    <div class="card" onclick="openStory('From nothing to something.')">
-        <img src="shi.jpeg">
-        <span>Rise</span>
+    <div class="card" onclick="openStory('Rise from blood & fire.')">
+        <img src="images/img3.jpg">
+        <span>RISE</span>
     </div>
 </section>
 
-<!-- Popup -->
+<!-- POPUP -->
 <div id="popup">
     <div class="popup-box">
         <span class="close" onclick="closeStory()">✖</span>
