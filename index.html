@@ -7,25 +7,36 @@
 </head>
 <body>
 
+<!-- BLOOD DRIP -->
+<div class="blood"></div>
+
+<!-- PASSWORD LOCK -->
+<div id="lock">
+    <h2>ENTER PASSWORD</h2>
+    <input type="password" id="pwd" placeholder="Password">
+    <button onclick="unlock()">ENTER</button>
+</div>
+
 <header>
-<h1>DARK DIARY</h1>
-<p>PAIN • POWER • PROGRESS</p>
+    <h1>DARK DIARY</h1>
+    <p>PAIN • POWER • PROGRESS</p>
 </header>
 
-<!-- HOME GALLERY -->
-<section id="gallery" class="gallery"></section>
+<!-- GALLERY -->
+<section id="gallery"></section>
 
 <!-- SINGLE VIEW -->
-<section id="singleView" class="single-view">
-    <button class="back-btn" onclick="goBack()">⬅ BACK</button>
+<section id="singleView">
+    <button class="btn" onclick="goBack()">⬅ BACK</button>
+    <button class="btn" onclick="prevImg()">⏮ PREV</button>
+    <button class="btn" onclick="nextImg()">⏭ NEXT</button>
 
     <img id="singleImg">
     <p id="singleStory"></p>
 
     <div class="music-box">
-        <button onclick="toggleMusic()">▶ / ⏸ MUSIC</button>
+        <button class="btn" onclick="toggleMusic()">▶ / ⏸ MUSIC</button>
     </div>
-
     <audio id="bgMusic"></audio>
 </section>
 
