@@ -4,7 +4,7 @@ body {
     color: white;
     background:
         linear-gradient(rgba(0,0,0,0.85), rgba(120,0,0,0.6)),
-        url("images/bg.jpg");
+        url("shi.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
